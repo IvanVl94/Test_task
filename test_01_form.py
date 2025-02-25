@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 
 
+
 driver = webdriver.Chrome()
 driver.maximize_window()
 
