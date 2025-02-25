@@ -37,3 +37,5 @@ def test_calc(driver, delay, number_one, operation, number_two, result):
 
     res = driver.find_element(By.CSS_SELECTOR, ".screen").text
     assert res == str(result)
+    
+    driver.quit()
