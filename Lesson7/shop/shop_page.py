@@ -24,10 +24,10 @@ class ShopPage:
         self._driver.get("https://www.saucedemo.com/")
     
     # Регистрируемся
-    def shop_form(self, name_user, password):
+    def shop_form_credentials(self, name_user, password):
         self.driver.find_element(*self.name_user_input).send_keys(name_user)
         self.driver.find_element(*self.password_input).send_keys(password)
-       
+   
     def summit_button(self, button):
         self.driver.find_element(*self.login_button_input).click()
     

@@ -17,7 +17,7 @@ def form_shop_test(driver):
     # Заходим на сайт   
     form_shop.to_do_shop_test()
     # Регистрируемся
-    form_shop.shop_form(
+    form_shop.shop_form_credentials(
         name_user="standard_user",
         password="secret_sauce"
     )

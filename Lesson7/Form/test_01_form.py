@@ -37,7 +37,7 @@ def form_submission(driver):
     
     
     zip_code_color = form_page.get_zip_code_field_color()
-    assert zip_code_color == "rgb(255, 0, 0)", "Поле Zip code должно быть подсвечено красным"
+    assert zip_code_color == "rgba(255, 0, 0, 1)", "Поле Zip code должно быть подсвечено красным"
      
     other_colors = form_page.get_colors_other()
     for field, color in other_colors.items():

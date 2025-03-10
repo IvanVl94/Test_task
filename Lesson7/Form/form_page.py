@@ -34,7 +34,7 @@ class FormPage:
         self.driver.find_element(*self.button_input).click()
     
     def get_zip_code_field_color(self):
-        return self.driver.find_element(*self.zip_code_input).get_attribute('class')
+        return self.driver.find_element(*self.zip_code_input).value_of_css_property("background-color")
     
     def get_colors_other(self):
         colors = {}
